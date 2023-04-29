@@ -1,0 +1,6 @@
+- Creating project and app
+- Registering model in admin.py
+- Adding data via /admin
+- Mapping URLs to views
+- Writing some logic in views.py
+- Displaying data in views based on templates (no CSS)

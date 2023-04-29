@@ -1,0 +1,15 @@
+{% extends "todo/base.html" %}
+
+{% block title %}Todo: {{ post.title }}{% endblock title %}
+Task: {% block content_title %}{{ post.title }}{% endblock content_title %}
+{% block content %}{{ post.content }}{% endblock content %}
+{% block content_status %}
+{% if post.status == 1 %}
+    Status: <b>Done</b>
+{% else %}
+    Status: <b>Yet to be done</b>
+{% endif %}
+{% endblock content_status %}
+{% block back %}<a href={% url 'all-posts' %}>Go back to all the todos</a>{% endblock back%}
+
+
